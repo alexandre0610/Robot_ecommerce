@@ -24,6 +24,9 @@ pipeline{
                 stage('install deps'){
                     steps{
                         sh 'pip --version'
+                        sh 'pip install robotframework'
+                        sh 'pip install robotframework-seleniumlibrary'
+                        sh 'pip list'
                     }
                 }
  
@@ -39,23 +42,5 @@ pipeline{
         }
     }
 
-    post{
-        always{
-            script{
-                if(params.ALLURE){
-                    try {
-                        unstash 'allure-results'
-                    } catch (e) {
-                        echo "Pas de stash allure"
-                    }
-
-                    archiveArtifacts artifacts: 'allure-results/**', allowEmptyArchive: true
-
-                    allure includeProperties: false,
-                           jdk: '',
-                           results: [[path: 'allure-results/']]
-                }
-            }
-        }
-    }
+    
 }
