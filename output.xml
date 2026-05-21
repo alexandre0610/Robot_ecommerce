@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.13 on win32)" generated="2026-05-21T15:01:07.827116" rpa="false" schemaversion="5">
+<suite id="s1" name="E2E" source="C:\Users\alexk\OneDrive\Desktop\Robot_ecommerce\tests\e2e.robot">
+<test id="s1-t1" name="Creer un urlisateur" line="10">
+<kw name="init browser" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-21T15:01:08.437864" level="INFO">Opening browser 'chrome' to base url 'https://thrundrz.fr/gestion/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-21T15:01:08.437215" elapsed="4.088712"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-05-21T15:01:12.526557" elapsed="0.004485"/>
+</kw>
+<status status="PASS" start="2026-05-21T15:01:08.435592" elapsed="4.095815"/>
+</kw>
+<kw name="se connecter" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-21T15:01:12.534373" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<arg>xpath=//a[contains(text(),'Se connecter')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-21T15:01:12.533244" elapsed="0.997369"/>
+</kw>
+<status status="PASS" start="2026-05-21T15:01:12.532374" elapsed="0.998712"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-05-21T15:01:13.545276" level="INFO">${url} = https://thrundrz.fr/gestion/login</msg>
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-05-21T15:01:13.531968" elapsed="0.013491"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-21T15:01:13.592756" level="INFO">Current location is 'https://thrundrz.fr/gestion/login'.</msg>
+<arg>${url}</arg>
+<arg>https://thrundrz.fr/gestion/login</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2026-05-21T15:01:13.546902" elapsed="0.046100"/>
+</kw>
+<kw name="saisir credentaials" owner="loginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-21T15:01:13.596093" level="INFO">Typing text 'testeur@gmail.com' into text field 'id:email'.</msg>
+<arg>${email}</arg>
+<arg>${e}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-21T15:01:13.594714" elapsed="0.258114"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-21T15:01:13.854146" level="INFO">Typing text 'testeur2024@' into text field 'id:password'.</msg>
+<arg>${password}</arg>
+<arg>${p}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-21T15:01:13.853327" elapsed="0.222130"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-21T15:01:14.076567" level="INFO">Clicking element 'xpath=//button[contains(., "Se connecter")]'.</msg>
+<arg>${btn_connecter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-21T15:01:14.075909" elapsed="0.264923"/>
+</kw>
+<arg>testeur@gmail.com</arg>
+<arg>testeur2024@</arg>
+<status status="PASS" start="2026-05-21T15:01:13.593849" elapsed="0.747520"/>
+</kw>
+<kw name="check if message" owner="loginPage">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-21T15:01:14.867647" level="INFO">Element 'xpath=//div[contains(.,"Connexion réussie")]' is displayed.</msg>
+<arg>${mess_conn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-21T15:01:14.343538" elapsed="0.524350"/>
+</kw>
+<status status="PASS" start="2026-05-21T15:01:14.342659" elapsed="0.525481"/>
+</kw>
+<status status="PASS" start="2026-05-21T15:01:08.433728" elapsed="6.434944"/>
+</test>
+<status status="PASS" start="2026-05-21T15:01:07.829108" elapsed="7.040838"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="E2E" id="s1" pass="1" fail="0" skip="0">E2E</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
