@@ -15,7 +15,7 @@ pipeline{
             agent{
                 docker{
                     image 'python:latest'
-                    args '--user 1000:1000'
+                    args '--user 1000:1000 -e HOME=/tmp'
                 }
             }
 
