@@ -34,7 +34,7 @@ pipeline{
                 stage('run user test'){
                     steps{  
                         script{
-                            sh "echo hello"
+                            sh "robot test/e2e.robot"
                         }
                     }
                 }
