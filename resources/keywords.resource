@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 ${BROWSER}    chrome
 ${URL}    https://thrundrz.fr/gestion/
 
-***Keywords***  
+*** Keywords *** 
 
 init browser
     # Open Browser        chrome   
@@ -16,5 +16,12 @@ init browser
 
 se connecter 
     Click Element    xpath=//a[contains(text(),'Se connecter')]  
+
+verifier l'url 
+    [Arguments]    ${url}
+    ${url}    Get Location
+    Location Should Be    url=${url}
+    
+
     
 
