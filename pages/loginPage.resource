@@ -14,13 +14,13 @@ ${mess_conn}    xpath=//div[contains(.,"Connexion réussie")]
 
 #methode
 *** Keywords ***
-
-saisir credentaials
+saisir credentials  
     [Arguments]    ${e}    ${p}  
     Input Text    ${email}    ${e}   
     Input Text    ${password}    ${p} 
-    Click Element    ${btn_connecter}  
-check if message 
+    Click Element    ${btn_connecter} 
+
+check message de connexion  
     Element Should Be Visible    ${mess_conn}    
         
 

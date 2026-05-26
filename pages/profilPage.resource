@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    page pom for profil page
 Library    SeleniumLibrary
 
 *** Variables ***

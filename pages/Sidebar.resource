@@ -1,6 +1,5 @@
 *** Settings ***
-Documentation    page pom for login page
-#importer la library Selenium
+Documentation    page pom for sidebar
 Library    SeleniumLibrary
 
 #Locators
@@ -18,18 +17,25 @@ ${Se déconnecter}    xpath=//button[.//p[text()='Se déconnecter']]
 
 click sur btn Dashboard
     Click Element    ${Dashboard}
-appeler sur btn profil
+
+appuyer sur btn profil
     Click Element    ${profil}
+
 click sur btn Devis
     Click Element    ${Devis}
+
 click sur btn Factures
     Click Element    ${Factures}
+
 click sur btn Avoirs
     Click Element    ${Avoirs}
+
 click sur btn Relancer
     Click Element    ${Relancer}
+
 click sur btn se déconnecter
     Click Element    ${se déconnecter}
+    
 click sur btn profil
     Click Element    ${profil}
 
