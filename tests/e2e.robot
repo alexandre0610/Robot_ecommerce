@@ -33,20 +33,23 @@ Creer un urlisateur
     choisir la forme_juridique    SASU
 #Adresse
 #Code postal
+    saisie le code postale    75019    
 #Ville
     saisie la ville    neuilly    
 #Capital
     saisie la capital    paris
 #Sélectionner obligatoirement les taux de TVA :
-    cocher la case TVA
+   verifier la case TVA est coché
 #5.5%
     cocher la case de 5.5%
 
 #20%
+    cocher la case de 20%
 #Cliquer sur " Sauvegarder"
     cliquer sur le bouton sauvegarder
-
 #verifier Un message doit s’afficher :"Profil mis à jour avec succès"
+    mise a jour succes    Profil mis à jour avec succès
+
 
 
 
