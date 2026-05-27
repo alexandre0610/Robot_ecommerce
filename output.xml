@@ -1,234 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-05-26T17:47:27.434848" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-05-27T19:57:26.686416" rpa="false" schemaversion="5">
 <suite id="s1" name="E2E" source="C:\Users\alexk\OneDrive\Desktop\Robot_ecommerce\tests\e2e.robot">
 <test id="s1-t1" name="modifier le profil de l'utilisateur" line="13">
 <kw name="init browser" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:32.128360" level="INFO">Opening browser 'chrome' to base url 'https://thrundrz.fr/gestion/'.</msg>
+<msg time="2026-05-27T19:58:19.965795" level="INFO">Opening browser 'chrome' to base url 'https://thrundrz.fr/gestion/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-05-26T17:47:32.127991" elapsed="16.139506"/>
+<status status="PASS" start="2026-05-27T19:58:19.965387" elapsed="89.838601"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2026-05-26T17:47:48.267817" elapsed="0.002670"/>
+<status status="PASS" start="2026-05-27T19:59:50.027106" elapsed="0.001522"/>
 </kw>
-<status status="PASS" start="2026-05-26T17:47:32.127030" elapsed="16.143707"/>
+<status status="PASS" start="2026-05-27T19:58:19.964409" elapsed="90.064604"/>
 </kw>
 <kw name="se connecter" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:48.272099" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<msg time="2026-05-27T19:59:50.031114" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
 <arg>xpath=//a[contains(text(),'Se connecter')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:48.271640" elapsed="1.015750"/>
+<status status="PASS" start="2026-05-27T19:59:50.030622" elapsed="16.824245"/>
 </kw>
-<status status="PASS" start="2026-05-26T17:47:48.271220" elapsed="1.016337"/>
+<status status="PASS" start="2026-05-27T19:59:50.029997" elapsed="16.825064"/>
 </kw>
 <kw name="verifier l'url" owner="keywords">
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:49.293127" level="INFO">${url} = https://thrundrz.fr/gestion/login</msg>
+<msg time="2026-05-27T20:00:07.645461" level="INFO">${url} = https://thrundrz.fr/gestion/login</msg>
 <var>${url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2026-05-26T17:47:49.288373" elapsed="0.004817"/>
+<status status="PASS" start="2026-05-27T20:00:06.861102" elapsed="0.784428"/>
 </kw>
 <kw name="Location Should Be" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:49.306365" level="INFO">Current location is 'https://thrundrz.fr/gestion/login'.</msg>
+<msg time="2026-05-27T20:00:07.650521" level="INFO">Current location is 'https://thrundrz.fr/gestion/login'.</msg>
 <arg>url=${url}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2026-05-26T17:47:49.293388" elapsed="0.013110"/>
+<status status="PASS" start="2026-05-27T20:00:07.645745" elapsed="0.004912"/>
 </kw>
 <arg>https://thrundrz.fr/gestion/login</arg>
-<status status="PASS" start="2026-05-26T17:47:49.287974" elapsed="0.018646"/>
+<status status="PASS" start="2026-05-27T20:00:06.860645" elapsed="0.790144"/>
 </kw>
 <kw name="saisir credentials" owner="loginPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:49.308375" level="INFO">Typing text 'testeur@gmail.com' into text field 'id:email'.</msg>
+<msg time="2026-05-27T20:00:07.652273" level="INFO">Typing text 'testeur@gmail.com' into text field 'id:email'.</msg>
 <arg>${email}</arg>
 <arg>${e}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:49.308044" elapsed="0.139706"/>
+<status status="PASS" start="2026-05-27T20:00:07.651622" elapsed="2.185431"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:49.448473" level="INFO">Typing text 'testeur2024@' into text field 'id:password'.</msg>
+<msg time="2026-05-27T20:00:09.837647" level="INFO">Typing text 'testeur2024@' into text field 'id:password'.</msg>
 <arg>${password}</arg>
 <arg>${p}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:49.448057" elapsed="0.133587"/>
+<status status="PASS" start="2026-05-27T20:00:09.837304" elapsed="0.096294"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:49.582244" level="INFO">Clicking element 'xpath=//button[contains(., "Se connecter")]'.</msg>
+<msg time="2026-05-27T20:00:09.934175" level="INFO">Clicking element 'xpath=//button[contains(., "Se connecter")]'.</msg>
 <arg>${btn_connecter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:49.581886" elapsed="0.063055"/>
+<status status="PASS" start="2026-05-27T20:00:09.933841" elapsed="0.083164"/>
 </kw>
 <arg>testeur@gmail.com</arg>
 <arg>testeur2024@</arg>
-<status status="PASS" start="2026-05-26T17:47:49.307662" elapsed="0.337433"/>
+<status status="PASS" start="2026-05-27T20:00:07.651206" elapsed="2.366172"/>
 </kw>
 <kw name="check message de connexion" owner="loginPage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:50.705972" level="INFO">Element 'xpath=//div[contains(.,"Connexion réussie")]' is displayed.</msg>
+<msg time="2026-05-27T20:00:10.598174" level="INFO">Element 'xpath=//div[contains(.,"Connexion réussie")]' is displayed.</msg>
 <arg>${mess_conn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-26T17:47:49.645844" elapsed="1.060254"/>
+<status status="PASS" start="2026-05-27T20:00:10.019927" elapsed="0.578402"/>
 </kw>
-<status status="PASS" start="2026-05-26T17:47:49.645488" elapsed="1.060730"/>
+<status status="PASS" start="2026-05-27T20:00:10.019474" elapsed="0.579128"/>
 </kw>
 <kw name="appuyer sur btn profil" owner="sidebar">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:50.707465" level="INFO">Clicking element 'xpath=//button[.//p[text()='Profil']]'.</msg>
+<msg time="2026-05-27T20:00:10.599679" level="INFO">Clicking element 'xpath=//button[.//p[text()='Profil']]'.</msg>
 <arg>${profil}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:50.707173" elapsed="0.103479"/>
+<status status="PASS" start="2026-05-27T20:00:10.599379" elapsed="0.087863"/>
 </kw>
-<status status="PASS" start="2026-05-26T17:47:50.706832" elapsed="0.103979"/>
+<status status="PASS" start="2026-05-27T20:00:10.599005" elapsed="0.088669"/>
 </kw>
 <kw name="verifier l'url" owner="keywords">
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:50.826802" level="INFO">${url} = https://thrundrz.fr/gestion/EspaceClient/profil</msg>
+<msg time="2026-05-27T20:00:10.703369" level="INFO">${url} = https://thrundrz.fr/gestion/EspaceClient/profil</msg>
 <var>${url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2026-05-26T17:47:50.812329" elapsed="0.014534"/>
+<status status="PASS" start="2026-05-27T20:00:10.688939" elapsed="0.015088"/>
 </kw>
 <kw name="Location Should Be" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:50.830737" level="INFO">Current location is 'https://thrundrz.fr/gestion/EspaceClient/profil'.</msg>
+<msg time="2026-05-27T20:00:10.712488" level="INFO">Current location is 'https://thrundrz.fr/gestion/EspaceClient/profil'.</msg>
 <arg>url=${url}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2026-05-26T17:47:50.827058" elapsed="0.003795"/>
+<status status="PASS" start="2026-05-27T20:00:10.704527" elapsed="0.008093"/>
 </kw>
 <arg>https://thrundrz.fr/gestion/EspaceClient/profil</arg>
-<status status="PASS" start="2026-05-26T17:47:50.811798" elapsed="0.019172"/>
+<status status="PASS" start="2026-05-27T20:00:10.688293" elapsed="0.024464"/>
 </kw>
 <kw name="saisie nom du commercial" owner="profilPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:50.832007" level="INFO">Typing text 'ppppp' into text field 'name=nom_commercial'.</msg>
+<msg time="2026-05-27T20:00:10.713947" level="INFO">Typing text 'ppppp' into text field 'name=nom_commercial'.</msg>
 <arg>${nom_commercial}</arg>
 <arg>${n}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:50.831695" elapsed="0.367887"/>
+<status status="PASS" start="2026-05-27T20:00:10.713585" elapsed="0.547442"/>
 </kw>
 <arg>ppppp</arg>
-<status status="PASS" start="2026-05-26T17:47:50.831336" elapsed="0.368386"/>
+<status status="PASS" start="2026-05-27T20:00:10.713184" elapsed="0.547986"/>
 </kw>
 <kw name="choisir la forme_juridique" owner="profilPage">
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:51.200856" level="INFO">Selecting options from selection list 'css=select[name='forme_juridique']' by value SASU.</msg>
+<msg time="2026-05-27T20:00:11.262288" level="INFO">Selecting options from selection list 'css=select[name='forme_juridique']' by value SASU.</msg>
 <arg>${forme_juridique}</arg>
 <arg>${choix}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.200555" elapsed="0.057548"/>
+<status status="PASS" start="2026-05-27T20:00:11.261987" elapsed="0.457759"/>
 </kw>
 <arg>SASU</arg>
-<status status="PASS" start="2026-05-26T17:47:51.200153" elapsed="0.058106"/>
+<status status="PASS" start="2026-05-27T20:00:11.261636" elapsed="0.458236"/>
 </kw>
 <kw name="saisir code postal aleatoire" owner="keywords">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-05-26T17:47:51.259858" level="INFO">${code} = 67369</msg>
+<msg time="2026-05-27T20:00:11.724000" level="INFO">${code} = 80314</msg>
 <var>${code}</var>
 <arg>(random.randint(0,99999))</arg>
 <arg>random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.259240" elapsed="0.000658"/>
+<status status="PASS" start="2026-05-27T20:00:11.723354" elapsed="0.000686"/>
 </kw>
 <return>
 <value>${code}</value>
-<status status="PASS" start="2026-05-26T17:47:51.259983" elapsed="0.000082"/>
+<status status="PASS" start="2026-05-27T20:00:11.724126" elapsed="0.000085"/>
 </return>
-<msg time="2026-05-26T17:47:51.260234" level="INFO">${code} = 67369</msg>
+<msg time="2026-05-27T20:00:11.724375" level="INFO">${code} = 80314</msg>
 <var>${code}</var>
-<status status="PASS" start="2026-05-26T17:47:51.258915" elapsed="0.001354"/>
+<status status="PASS" start="2026-05-27T20:00:11.722984" elapsed="0.001424"/>
 </kw>
 <kw name="saisie le code postale" owner="profilPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:51.261214" level="INFO">Typing text '67369' into text field 'name:code_postal'.</msg>
+<msg time="2026-05-27T20:00:11.725413" level="INFO">Typing text '80314' into text field 'name:code_postal'.</msg>
 <arg>${code_postale}</arg>
 <arg>${code}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.260905" elapsed="0.101426"/>
+<status status="PASS" start="2026-05-27T20:00:11.725133" elapsed="0.258629"/>
 </kw>
 <arg>${code}</arg>
-<status status="PASS" start="2026-05-26T17:47:51.260577" elapsed="0.101895"/>
+<status status="PASS" start="2026-05-27T20:00:11.724767" elapsed="0.259134"/>
 </kw>
 <kw name="saisie la ville" owner="profilPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:51.363533" level="INFO">Typing text 'neuilly' into text field 'name=ville'.</msg>
+<msg time="2026-05-27T20:00:11.985373" level="INFO">Typing text 'neuilly' into text field 'name=ville'.</msg>
 <arg>${ville}</arg>
 <arg>${v}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.363218" elapsed="0.093512"/>
+<status status="PASS" start="2026-05-27T20:00:11.985058" elapsed="0.079845"/>
 </kw>
 <arg>neuilly</arg>
-<status status="PASS" start="2026-05-26T17:47:51.362848" elapsed="0.094092"/>
+<status status="PASS" start="2026-05-27T20:00:11.984690" elapsed="0.080398"/>
 </kw>
 <kw name="saisie la capital" owner="profilPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:51.458081" level="INFO">Typing text 'paris' into text field 'name=capital'.</msg>
+<msg time="2026-05-27T20:00:12.066352" level="INFO">Typing text 'paris' into text field 'name=capital'.</msg>
 <arg>${capital}</arg>
 <arg>${c}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.457745" elapsed="0.100470"/>
+<status status="PASS" start="2026-05-27T20:00:12.066044" elapsed="0.072794"/>
 </kw>
 <arg>paris</arg>
-<status status="PASS" start="2026-05-26T17:47:51.457336" elapsed="0.101029"/>
+<status status="PASS" start="2026-05-27T20:00:12.065652" elapsed="0.073318"/>
 </kw>
 <kw name="verifier la case TVA est coché" owner="profilPage">
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:51.559390" level="INFO">Verifying checkbox 'xpath://label[contains(text(),"TVA incluse (obligatoire pour votre statut)")]//input[@type="checkbox"]' is selected.</msg>
+<msg time="2026-05-27T20:00:12.139852" level="INFO">Verifying checkbox 'xpath://label[contains(text(),"TVA incluse (obligatoire pour votre statut)")]//input[@type="checkbox"]' is selected.</msg>
 <arg>${TVA_incluse}</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.559101" elapsed="0.026658"/>
+<status status="PASS" start="2026-05-27T20:00:12.139584" elapsed="0.025533"/>
 </kw>
-<status status="PASS" start="2026-05-26T17:47:51.558742" elapsed="0.027158"/>
+<status status="PASS" start="2026-05-27T20:00:12.139288" elapsed="0.025976"/>
 </kw>
 <kw name="cocher la case de 5.5%" owner="profilPage">
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:51.587638" level="INFO">Selecting checkbox 'xpath://label[contains(text(),"5.5%")]//input[@type="checkbox"]'.</msg>
+<msg time="2026-05-27T20:00:12.166240" level="INFO">Selecting checkbox 'xpath://label[contains(text(),"5.5%")]//input[@type="checkbox"]'.</msg>
 <arg>${TVA_5,5%}</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.587204" elapsed="0.025575"/>
+<status status="PASS" start="2026-05-27T20:00:12.165971" elapsed="0.024419"/>
 </kw>
-<status status="PASS" start="2026-05-26T17:47:51.586532" elapsed="0.026400"/>
+<status status="PASS" start="2026-05-27T20:00:12.165645" elapsed="0.024944"/>
 </kw>
 <kw name="cocher la case de 20%" owner="profilPage">
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:51.613936" level="INFO">Selecting checkbox 'xpath://label[contains(text(),"20%")]//input[@type="checkbox"]'.</msg>
+<msg time="2026-05-27T20:00:12.191612" level="INFO">Selecting checkbox 'xpath://label[contains(text(),"20%")]//input[@type="checkbox"]'.</msg>
 <arg>${TVA_20%}</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.613632" elapsed="0.025784"/>
+<status status="PASS" start="2026-05-27T20:00:12.191320" elapsed="0.024617"/>
 </kw>
-<status status="PASS" start="2026-05-26T17:47:51.613295" elapsed="0.026265"/>
+<status status="PASS" start="2026-05-27T20:00:12.190966" elapsed="0.025111"/>
 </kw>
 <kw name="cliquer sur le bouton sauvegarder" owner="profilPage">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:51.640765" level="INFO">Clicking element 'xpath=//button[contains(., "Sauvegarder")]'.</msg>
+<msg time="2026-05-27T20:00:12.217069" level="INFO">Clicking element 'xpath=//button[contains(., "Sauvegarder")]'.</msg>
 <arg>${Sauvegarder}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.640337" elapsed="0.288159"/>
+<status status="PASS" start="2026-05-27T20:00:12.216776" elapsed="0.389194"/>
 </kw>
-<status status="PASS" start="2026-05-26T17:47:51.639930" elapsed="0.288793"/>
+<status status="PASS" start="2026-05-27T20:00:12.216438" elapsed="0.389680"/>
 </kw>
 <kw name="mise a jour succes" owner="profilPage">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${mes_succes}</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-26T17:47:51.930309" elapsed="0.270675"/>
+<status status="PASS" start="2026-05-27T20:00:12.607069" elapsed="0.760383"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-05-26T17:47:52.738047" level="INFO">Element 'css:.Toastify__toast--success' contains text 'Profil mis à jour avec succès'.</msg>
+<msg time="2026-05-27T20:00:14.048842" level="INFO">Element 'css:.Toastify__toast--success' contains text 'Profil mis à jour avec succès'.</msg>
 <arg>${mes_succes}</arg>
 <arg>${mes}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-05-26T17:47:52.201416" elapsed="0.536957"/>
+<status status="PASS" start="2026-05-27T20:00:13.367707" elapsed="0.681266"/>
 </kw>
 <arg>Profil mis à jour avec succès</arg>
-<status status="PASS" start="2026-05-26T17:47:51.929705" elapsed="0.808970"/>
+<status status="PASS" start="2026-05-27T20:00:12.606712" elapsed="1.442390"/>
 </kw>
-<status status="PASS" start="2026-05-26T17:47:32.125896" elapsed="20.614209"/>
+<status status="PASS" start="2026-05-27T19:58:19.963352" elapsed="114.086070"/>
 </test>
-<status status="PASS" start="2026-05-26T17:47:27.441718" elapsed="25.299991"/>
+<status status="PASS" start="2026-05-27T19:57:26.693812" elapsed="167.356604"/>
 </suite>
 <statistics>
 <total>

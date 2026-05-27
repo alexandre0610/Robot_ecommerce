@@ -1,6 +1,7 @@
 pipeline{
     agent any
-
+    
+   
    
 
     stages{
@@ -13,12 +14,13 @@ pipeline{
 
         stage('global stage'){
             agent{
+                // image docker  de python 
                 docker{
                     image 'python:latest'
-                    args '--user 1000:1000 -e HOME=/tmp'
+                   args '--user 1000:1000 -e HOME=/tmp'
                 }
             }
-
+                
             stages{
 
                 stage('install deps'){
@@ -34,7 +36,8 @@ pipeline{
                 stage('run user test'){
                     steps{  
                         script{
-                            sh "robot test/e2e.robot"
+
+                            sh "python -m robot tests/e2e.robot"
                         }
                     }
                 }
