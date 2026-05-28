@@ -16,7 +16,7 @@ pipeline{
             agent{
                 // image docker  de python 
                 docker{
-                    image 'python:latest'
+                    image 'selenium/standalone-chrome'
                    args '--user 1000:1000 -e HOME=/tmp'
                 }
             }
